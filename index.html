@@ -20,28 +20,6 @@
 <!-- font css style-->
 <link rel="stylesheet" href="css/font-awesome.css">
 <!--for slider style-->
-  <script src="js/scrollreveal.min.js"></script>
-  <script>
-    (function(){
-
-      var config = {
-        reset: false,
-        viewFactor : 0.15,
-        duration   : 800,
-        distance   : "0px",
-        scale      : 0.8,
-        mobile: false
-
-      };
-
-      window.sr = ScrollReveal( config );
-
-      if (sr.isSupported()) {
-        document.documentElement.classList.add('sr');
-      }
-    })();
-
-  </script>
 
 <noscript>
 <link rel="stylesheet" type="text/css" href="css/fallback.css" />
@@ -436,6 +414,28 @@ $( ".navbar-toggle" ).click(function() {
 
 
 });
+</script>
+<script src="js/scrollreveal.min.js"></script>
+<script>
+  (function(){
+
+    var config = {
+      reset: false,
+      viewFactor : 0.15,
+      duration   : 800,
+      distance   : "0px",
+      scale      : 0.8,
+      mobile: false
+
+    };
+
+    window.sr = ScrollReveal( config );
+
+    if (sr.isSupported()) {
+      document.documentElement.classList.add('sr');
+    }
+  })();
+
 </script>
 <script>
   sr.reveal( ".proPic, .bntDownload");
