@@ -17,8 +17,11 @@ jQuery('#loopedSlider').prepend("<a href='#' class='previous'>&lt;</a><a href='#
 var windowWidth = $(window).width();
     var windowHeight =$(window).height();
     $('.banner').css({'width':windowWidth ,'height':windowHeight -"60" });
-	
-	
+
+$(window).scroll(function(){
+        $(".bannerText").css("opacity", 1 - $(window).scrollTop() / 400);
+    });
+
 
 
 // for portfoli filter jquary
@@ -103,7 +106,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top -60
-        }, 1000);
+        }, 1100);
         return false;
       }
     }

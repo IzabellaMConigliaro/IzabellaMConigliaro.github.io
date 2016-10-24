@@ -20,6 +20,28 @@
 <!-- font css style-->
 <link rel="stylesheet" href="css/font-awesome.css">
 <!--for slider style-->
+  <script src="js/scrollreveal.min.js"></script>
+  <script>
+    (function(){
+
+      var config = {
+        reset: false,
+        viewFactor : 0.15,
+        duration   : 800,
+        distance   : "0px",
+        scale      : 0.8,
+        mobile: false
+
+      };
+
+      window.sr = ScrollReveal( config );
+
+      if (sr.isSupported()) {
+        document.documentElement.classList.add('sr');
+      }
+    })();
+
+  </script>
 
 <noscript>
 <link rel="stylesheet" type="text/css" href="css/fallback.css" />
@@ -35,7 +57,7 @@
     <div class="banner row" id="banner">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 noPadd" style="height:100%">
         <!--background slide show start-->
-        <div class="bannerPart"> <img src="images/1.jpg" alt="" class="bannerImg"> </div>
+        <div class="bannerPart"></div>
         <!--background slide show end-->
       </div>
     </div>
@@ -414,6 +436,12 @@ $( ".navbar-toggle" ).click(function() {
 
 
 });
+</script>
+<script>
+  sr.reveal( ".proPic, .bntDownload");
+  sr.reveal('.lightCon', { duration: 500 }, 100);
+
+
 </script>
 <!--for portfoli filter jquary-->
 <script src="js/jquery.isotope.js" type="text/javascript"></script>
