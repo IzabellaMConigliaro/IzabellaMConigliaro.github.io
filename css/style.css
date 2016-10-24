@@ -166,6 +166,7 @@ header{
 	zoom: 1;
 }
 .bannerText h1{
+	font-size:70px;
 	text-transform:uppercase;
 }
 .bannerText h2{
@@ -1145,7 +1146,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	}
 	
 	.education .workYear{
-		padding-top:58px;
+		padding-top:50px;
 	}
 }
 
